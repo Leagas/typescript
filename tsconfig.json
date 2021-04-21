@@ -13,7 +13,8 @@
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
 		"removeComments": true,
-		"types": ["react"]
+		"types": ["react"],
+		"experimentalDecorators": true
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "build"]

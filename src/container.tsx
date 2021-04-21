@@ -1,9 +1,10 @@
 import React from "react"
 
 import { Routes } from "./routes"
+import TemplateStore from "./views/template/store"
 
 const storeContext = React.createContext({
-	// store: new Store(),
+	templateStore: new TemplateStore(),
 })
 
 export const Container = () => <Routes />
