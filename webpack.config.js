@@ -6,27 +6,23 @@ const isDevelopment = process.env.NODE_ENV === "development"
 
 module.exports = {
 	mode: isDevelopment ? "development" : "production",
-	entry: "./index.tsx",
+	entry: "./index.js",
 	devtool: "source-map",
 	module: {
 		rules: [
-			{
-				test: /\.tsx?$/,
-				use: "ts-loader",
-				exclude: /node_modules/,
-			},
+			{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
 			{
 				test: /\.css$/,
-				loader: "style-loader!css-loader",
-			},
-		],
+				loader: "style-loader!css-loader"
+			}
+		]
 	},
 	plugins: [new CleanWebpackPlugin(), new webpack.ProgressPlugin()],
 	externals: {
 		react: "react",
 	},
 	resolve: {
-		extensions: [".tsx", ".ts", ".js"],
+		extensions: [".jsx", ".js"],
 	},
 	output: {
 		filename: "bundle.js",

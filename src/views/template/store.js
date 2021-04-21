@@ -1,5 +1,4 @@
 import { observable, action } from "mobx"
-import { TReady } from "./model"
 
 class TemplateStore {
 	constructor() {
@@ -7,10 +6,10 @@ class TemplateStore {
 	}
 
 	@observable
-	public ready: TReady = false
+	ready = false
 
 	@action
-	private init = (): void => {
+	init = () => {
 		this.ready = true
 	}
 }
