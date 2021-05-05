@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom"
+    ],
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "build",
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "types": [
+      "react"
+    ],
+  },
+  "include": [
+    "src/**/*",
+    "src/index.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
