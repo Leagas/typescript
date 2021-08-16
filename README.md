@@ -1,3 +1,3 @@
 # Typescript
 
-A react/typescipt template
+A  basic React/Rypescript template
