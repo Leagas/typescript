@@ -1,3 +1,3 @@
 # Typescript
 
-A basic React/Typescript template
+A basic React/Typescript template using mobx for state management
